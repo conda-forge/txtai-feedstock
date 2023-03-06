@@ -1,11 +1,11 @@
-About txtai
-===========
+About txtai-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/txtai-feedstock/blob/main/LICENSE.txt)
 
 Home: https://neuml.github.io/txtai
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/txtai-feedstock/blob/main/LICENSE.txt)
 
 Summary: Build AI-powered semantic search applications
 
