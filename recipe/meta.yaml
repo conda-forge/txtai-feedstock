@@ -1,5 +1,5 @@
 {% set name = "txtai" %}
-{% set version = "6.3.0" %}
+{% set version = "7.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txtai-{{ version }}.tar.gz
-  sha256: 89835840f4c634e95d754533f39d0737532259540c02abfdd0340e23e4ef4149
+  sha256: 56cff538bea92675160c5ef9e34eefa7ba2add56359afc8150e5aebe9355ecd8
 
 build:
   noarch: python
@@ -22,7 +22,7 @@ requirements:
     - python >=3.8
     - faiss-cpu >=1.7.1.post2
     - pytorch >=1.12.1
-    - transformers >=4.22.0
+    - transformers >=4.27.0
 
     - huggingface_hub >=0.9.0
     - numpy >=1.18.4
@@ -32,6 +32,11 @@ requirements:
 test:
   imports:
     - txtai
+  # Disabling for now since pip check cannot detect faiss-cpu
+  # commands:
+  #   - pip check
+  # requires:
+  #   - pip
 
 about:
   home: https://neuml.github.io/txtai
