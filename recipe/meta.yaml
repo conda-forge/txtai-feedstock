@@ -1,5 +1,5 @@
 {% set name = "txtai" %}
-{% set version = "7.1.0" %}
+{% set version = "7.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txtai-{{ version }}.tar.gz
-  sha256: 4ab533216452f4ed182b98e3c3e977749d6615d774a6682a65e9dbf13792f74b
+  sha256: e55773ef597d4997e6aac69eaced0d1de653ca2b999f0ba6a33867b5a8d189c9
 
 build:
   noarch: python
