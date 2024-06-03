@@ -22,8 +22,7 @@ requirements:
     - python >=3.8
     - faiss-cpu >=1.7.1.post2
     - pytorch >=1.12.1
-    - transformers >=4.27.0
-
+    - transformers >=4.28.0
     - huggingface_hub >=0.9.0
     - numpy >=1.18.4
     - pyyaml >=5.3
