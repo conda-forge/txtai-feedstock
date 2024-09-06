@@ -1,5 +1,5 @@
 {% set name = "txtai" %}
-{% set version = "7.3.0" %}
+{% set version = "7.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txtai-{{ version }}.tar.gz
-  sha256: 5183c268ed7ec12b4b9a12c7ae31361f15d10b06b09ea9bc99c6dd9655f72750
+  sha256: 473625889693c542df96e10eb33a0437772a469af826557e90f04ffc2868c1d9
 
 build:
   noarch: python
@@ -18,12 +18,14 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - python >=3.8
     - faiss-cpu >=1.7.1.post2
+    - msgpack-python >=1.0.7
     - pytorch >=1.12.1
     - transformers >=4.28.0
-    - huggingface_hub >=0.9.0
+    - huggingface_hub >=0.19.0
     - numpy >=1.18.4
     - pyyaml >=5.3
     - regex >=2022.8.17
