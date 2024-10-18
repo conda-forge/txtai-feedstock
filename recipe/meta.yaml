@@ -17,10 +17,10 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools
   run:
-    - python >=3.8
+    - python >=3.9
     - faiss-cpu >=1.7.1.post2
     - msgpack-python >=1.0.7
     - pytorch >=1.12.1
