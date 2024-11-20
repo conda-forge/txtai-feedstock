@@ -1,13 +1,13 @@
 {% set name = "txtai" %}
-{% set version = "7.5.1" %}
+{% set version = "8.0.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/txtai-{{ version }}.tar.gz
-  sha256: f5a23f020eb3907697130fe66ade13c1bb17810502b07b383b02004cfc29ccd7
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/txtai-{{ version }}.tar.gz
+  sha256: 64af10925414226800f37ef726f828e21eb6b613be20a4d18856fdd760bc5b28
 
 build:
   noarch: python
@@ -17,14 +17,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - faiss-cpu >=1.7.1.post2
     - msgpack-python >=1.0.7
     - pytorch >=1.12.1
-    - transformers >=4.28.0
+    - transformers >=4.45.0
     - huggingface_hub >=0.19.0
     - numpy >=1.18.4
     - pyyaml >=5.3
@@ -36,8 +36,9 @@ test:
   # Disabling for now since pip check cannot detect faiss-cpu
   # commands:
   #   - pip check
-  # requires:
-  #   - pip
+  requires:
+    - pip
+    - python {{ python_min }}
 
 about:
   home: https://neuml.github.io/txtai
