@@ -27,7 +27,7 @@ requirements:
     - python >=${{ python_min }}
     - faiss-cpu >=1.7.1.post2
     - msgpack-python >=1.0.7
-    - pytorch >=2.1
+    - pytorch >=2.4
     - transformers >=4.45.0
     - huggingface_hub >=0.34.0
     - numpy >=1.18.4
