@@ -34,6 +34,8 @@ requirements:
     - pyyaml >=5.3
     - regex >=2022.8.17
     - safetensors >=0.4.5
+    # Needed but not listed as required
+    - httpx >=0.28.1
 
 tests:
   - python:
