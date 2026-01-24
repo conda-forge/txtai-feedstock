@@ -35,7 +35,7 @@ requirements:
     - regex >=2022.8.17
     - safetensors >=0.4.5
     # Try
-    - accerlerate
+    - accelerate
 
 tests:
   - python:
