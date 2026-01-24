@@ -39,7 +39,7 @@ tests:
   - python:
       imports:
         - txtai
-      pip_check: false
+      pip_check: true
       python_version: ${{ python_min }}.*
 
 about:
