@@ -36,7 +36,7 @@ requirements:
     - safetensors >=0.4.5
     # Try
     - accelerate
-    - tqdm >= 4.67.0
+    - tqdm >=4.67.0
 
 tests:
   - python:
