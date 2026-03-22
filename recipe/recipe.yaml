@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: txtai
-  version: "9.6.0"
+  version: "9.7.0"
   python_min: '3.10'
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/txtai-${{ version }}.tar.gz
-  sha256: 8305a8ab3abf28444e87cb3b66065c1bc1682f34d94b79beab52078834225140
+  sha256: b5e77dd00ae0d876dc39b12eea908b1e9ef19e2dec63c9094be3da06a38a735e
 
 build:
   number: 0
@@ -44,7 +44,9 @@ tests:
         - txtai
       # turn off pip check as it does not work with faiss-cpu
       pip_check: false
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Build AI-powered semantic search applications
