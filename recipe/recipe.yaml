@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: txtai
   version: "9.12.0"
-  python_min: '3.10'
 
 package:
   name: ${{ name|lower }}
@@ -26,14 +25,14 @@ requirements:
   run:
     - python >=${{ python_min }}
     - faiss-cpu >=1.7.1.post2
-    - msgpack-python >=1.0.7
-    - pytorch >=2.4
-    - transformers >=4.56.2
     - huggingface_hub >=0.34.0
+    - msgpack-python >=1.0.7
     - numpy >=1.18.4
-    - pyyaml >=5.3
     - regex >=2022.8.17
+    - pyyaml >=5.3
     - safetensors >=0.4.5
+    - pytorch >=2.4
+    - transformers >=5.9.0
     # Try
     - accelerate
     - tqdm >=4.67.0
