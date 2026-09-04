@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: txtai
-  version: "9.12.0"
+  version: "9.13.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/txtai-${{ version }}.tar.gz
-  sha256: 3b34b7351667a8baf719452efe5e04125a80ad7754a310e7e01161c9869d144f
+  sha256: 7d3696eb9b929bf5c065a5d6d676794d3211b82b6d12f44552c298eec4af2139
 
 build:
   number: 0
